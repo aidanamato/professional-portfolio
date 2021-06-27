@@ -1,5 +1,8 @@
 :root {
-    
+    --primary-background: #998b7b;
+    --secondary-background: #d0cac0;
+    --primary-text: #7894b0;
+    --secondary-text: #94a6bb;
 }
 
 * {
@@ -9,7 +12,37 @@
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Header Styles Start */
+header {
+    text-align: center;
+    padding: 40px 0 20px;
+    background-color: var(--secondary-background);
+}
+
+header h1 {
+    width: 100%;
+    margin: 10px 0;
+    color: var(--secondary-text);
+    font-size: 44px;
+    font-weight: normal;
+}
+
+.accent-color {
+    color: var(--primary-text);
+    font-weight: bolder;
+}
+
+header h2 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    opacity: 0.75;
+    line-height: 1.5;
+}
+/* Header Styles End */
+
+/* Aside Styles Start */
