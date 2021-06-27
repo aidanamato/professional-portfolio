@@ -1,6 +1,6 @@
 :root {
     --primary-background: #998b7b;
-    --secondary-background: #d0cac0;
+    --secondary-background: #d4ccb0;
     --primary-text: #7894b0;
     --secondary-text: #94a6bb;
 }
@@ -18,13 +18,12 @@ body {
 /* Header Styles Start */
 header {
     text-align: center;
-    padding: 40px 0 20px;
+    padding: 10px 0 10px;
     background-color: var(--secondary-background);
 }
 
 header h1 {
     width: 100%;
-    margin: 10px 0;
     color: var(--secondary-text);
     font-size: 44px;
     font-weight: normal;
@@ -37,12 +36,33 @@ header h1 {
 
 header h2 {
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     font-style: italic;
-    opacity: 0.75;
-    line-height: 1.5;
+    opacity: 0.5;
 }
 /* Header Styles End */
 
 /* Aside Styles Start */
+
+/* Media Queries Start */
+@media screen and (min-width: 576px) {
+
+    /* Header Styles Start */
+    header {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    /* Header Styles Start */
+}
+
+@media screen and (min-width: 981px) {
+
+    /* Header Styles Start */
+    header {
+        padding: 50px 0 50px;
+    }
+}
