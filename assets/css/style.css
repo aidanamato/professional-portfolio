@@ -132,9 +132,20 @@ aside a {
 
     /* Header Styles Start */
     header {
-        padding: 50px 0 50px;
+        padding: 50px;
+    }
+
+    header h1 {
+        font-size: 56px;
+    }
+
+    header h2 {
+        font-size: 22px;
     }
     /* Header Styles End */
 
     /* Aside Styles Start */
+    .logo p {
+        padding: 43px;
+    }
 }
