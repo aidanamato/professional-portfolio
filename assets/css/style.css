@@ -1,9 +1,10 @@
 :root {
-    --primary-background: #998b7b;
-    --secondary-background: #d4ccb0;
-    --tertiary-background: #3a5874;
-    --primary-text: #7894b0;
-    --secondary-text: #94a6bb;
+    --color-1: #998b7b;
+    --color-2: #d4ccb0;
+    --color-3: #3a5874;
+    --color-4: #7894b0;
+    --color-5: #94a6bb;
+    --color-6: rgb(238, 231, 231);
 }
 
 * {
@@ -16,22 +17,33 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+section {
+    padding: 25px 8px;
+}
+
+/* Utility Classes Start */
+.section-title {
+    color: var(--color-4);
+    font-style: oblique;
+    margin-bottom: 16px;
+}
+
 /* Header Styles Start */
 header {
     text-align: center;
-    padding: 10px 0 10px;
-    background-color: var(--secondary-background);
+    padding: 10px 0;
+    background-color: var(--color-2);
 }
 
 header h1 {
     width: 100%;
-    color: var(--secondary-text);
+    color: var(--color-5);
     font-size: 44px;
     font-weight: normal;
 }
 
 header span {
-    color: var(--primary-text);
+    color: var(--color-4);
     font-weight: bolder;
 }
 
@@ -46,7 +58,7 @@ header h2 {
 
 /* Aside Styles Start */ 
 aside {
-    background-color: var(--tertiary-background);
+    background-color: var(--color-3);
 }
 
 .logo {
@@ -61,11 +73,35 @@ aside ul {
 }
 
 aside a {
-    color: var(--secondary-background);
+    color: var(--color-2);
     text-decoration: none;
     font-weight: bold;
 }
 /* Aside Styles End */
+
+/* About Styles Start */
+.about {
+    background-color: var(--color-6);
+}
+
+.about-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-flex img {
+    width: 35%;
+    border: 3px solid var(--color-1)
+}
+
+.about-flex p {
+    width: 100%;
+    padding-top: 16px;
+    line-height: 1.5;
+    opacity: 0.75;
+}
 
 /* Media Queries Start */
 @media screen and (min-width: 576px) {
@@ -75,6 +111,11 @@ aside a {
         padding-bottom: 20px;
     }
     /* Header Styles End */
+
+    /* About Styles Start */
+    .about-flex img {
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -102,10 +143,12 @@ aside a {
     }
 
     .logo p {
+        display: inline-block;
+        padding: 0 8px;
         font-size: 88px;
-        color: var(--primary-background);
+        color: var(--color-1);
         border-bottom: solid 2px;
-        border-color: var(--primary-background);
+        border-color: var(--color-1);
     }
 
     aside ul {
@@ -126,10 +169,25 @@ aside a {
         right: 0;
         width: 85%;
     }
+
+    /* About Styles Start */
+    .about-flex img {
+        width: 30%;
+    }
+
+    .about-flex p {
+        width: 50%;
+        line-height: 1.8;
+    }
 }
 
 @media screen and (min-width: 981px) {
 
+    /* Utility Classes Start */
+    section {
+        padding: 25px 16px;
+    }
+    
     /* Header Styles Start */
     header {
         padding: 50px;
@@ -147,5 +205,15 @@ aside a {
     /* Aside Styles Start */
     .logo p {
         padding: 43px;
+    }
+    /* Aside Styles End */
+
+    /* About Styles Start */
+    .about-flex {
+        margin-left: 45px;
+    }
+    
+    .about-flex img {
+        width: 20%;
     }
 }
