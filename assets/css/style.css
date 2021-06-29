@@ -21,6 +21,11 @@ section {
     padding: 25px 8px;
 }
 
+a {
+    text-decoration: none;
+    display: block;
+}
+
 /* Utility Classes Start */
 .section-title {
     color: var(--color-4);
@@ -74,7 +79,6 @@ aside ul {
 
 aside a {
     color: var(--color-2);
-    text-decoration: none;
     font-weight: bold;
 }
 /* Aside Styles End */
@@ -101,6 +105,64 @@ aside a {
     padding-top: 16px;
     line-height: 1.5;
     opacity: 0.75;
+}
+/* About Styles End */
+
+/* Work Styles Start */
+.work::before {
+    display: block;
+    content: "";
+    width: 45%;
+    margin: 0 auto;
+    border-top: solid 1px var(--color-1);
+    padding-bottom: 25px;
+}
+
+.work {
+    background-color: var(--color-6);
+    padding-top: 0;
+}
+
+.work-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.project {
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.project img {
+    opacity: 0.75;
+    object-fit: contain;
+    border: solid 2px var(--color-1);
+    border-radius: 5%;
+}
+
+.project-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: inherit;
+    transform: translate(-50%, -50%);
+}
+
+.project-1 {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.project-1 img {
+    width: 80%;
+    border-radius: 3%;
+}
+
+.project-1 .project-text {
+
 }
 
 /* Media Queries Start */
@@ -145,7 +207,7 @@ aside a {
     .logo p {
         display: inline-block;
         padding: 0 8px;
-        font-size: 88px;
+        font-size: 87px;
         color: var(--color-1);
         border-bottom: solid 2px;
         border-color: var(--color-1);
@@ -204,7 +266,8 @@ aside a {
 
     /* Aside Styles Start */
     .logo p {
-        padding: 43px;
+        font: 90px;
+        padding: 43px 44px 44px;
     }
     /* Aside Styles End */
 
